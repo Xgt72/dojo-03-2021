@@ -1,0 +1,14 @@
+{
+  "name": "count-letter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "count-letter.js",
+  "scripts": {
+    "test": "jest count-letter.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
