@@ -13,8 +13,20 @@ Add you own tests.
 */
 
 // TODO your code:
-function countChar() {
-
+function countChar(phrase, lettre) {
+  if (phrase === null || lettre === null || lettre.length < 1) {
+    return -1;
+  } else {
+    let phraseExplose = phrase.split("");
+    let count = 0;
+    for (let i = 0; i < phraseExplose.length; i++) {
+      if (lettre === phraseExplose[i]) {
+        count = count + 1;
+        //count += 1; count++
+      }
+    }
+    return count;
+  }
 }
-
 module.exports = countChar;
+
