@@ -28,4 +28,12 @@ describe("countChar", () => {
   it("Should return -1", () => {
     expect(countChar(null, "a")).toBe(-1);
   });
+
+  it("Should return -1", () => {
+    expect(countChar("phrase", null)).toBe(-1);
+  });
+
+  it("Should return -1", () => {
+    expect(countChar("phrase", "")).toBe(-1);
+  });
 });

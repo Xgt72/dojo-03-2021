@@ -13,8 +13,21 @@ Add you own tests.
 */
 
 // TODO your code:
-function countChar() {
-
+function countChar(sentence, letter) {
+  let total = 0;
+  if (sentence === null || letter === null || letter.length < 1) {
+    total = -1;
+  } else {
+    const tableau = sentence.split("");
+    for (let i = 0; i < tableau.length; i++) {
+      if (tableau[i] === letter) {
+        total = total + 1;
+        // total += 1
+        // total++
+      }
+    }
+  }
+  return total;
 }
 
 module.exports = countChar;
