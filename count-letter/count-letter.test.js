@@ -1,4 +1,4 @@
-const countChar = require("./count-letter.js");
+const count = require("./count-letter.js");
 
 describe("countChar", () => {
   it("Should be loaded", () => {
