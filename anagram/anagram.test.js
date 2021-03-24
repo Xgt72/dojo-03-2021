@@ -10,15 +10,15 @@ describe("anagram", () => {
   });
 
   it("Should return false", () => {
-    expect(countChar('inch', 'chins')).toBe(false);
+    expect(anagram('inch', 'chins')).toBe(false);
   });
 
   it("Should return true", () => {
-    expect(anagram('Andess', 'San des')).toBe(true);
+    expect(anagram('Anedss', 'San des')).toBe(true);
   });
 
   it("Should return false", () => {
-    expect(countChar('Hello', '')).toBe(false);
+    expect(anagram('Hello', '')).toBe(false);
   });
 
   it("Should return true", () => {
@@ -35,5 +35,9 @@ describe("anagram", () => {
 
   it("Should return true", () => {
     expect(anagram('State', 'Taste')).toBe(true);
+  });
+
+  it("Should return false", () => {
+    expect(anagram('argent', 'arenat')).toBe(false);
   });
 });
