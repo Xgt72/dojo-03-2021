@@ -6,7 +6,7 @@ describe("anagram", () => {
   });
 
   it("Should return true", () => {
-    expect(anagram('elbow', 'be low')).toBe(true);
+    expect(anagram('albow', 'be low')).toBe(true);
   });
 
   it("Should return false", () => {
